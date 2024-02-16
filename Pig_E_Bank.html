@@ -27,8 +27,10 @@
 	<body>
 		<header class="banner">
 			<div style="padding-top: 100px; padding-left: 200px; margin-bottom: -150px; width: 350px; height: auto;">
-				<img src="images/geo_flake_b&w.png" alt="Manzano Analytics Icon" style="width: 100%; height: 100%;">
-			</div>
+				<a href="index.html">
+					<img src="images/geo_flake_b&w.png" alt="Manzano Analytics Icon" style="width: 100%; height: 100%;">
+				</a>
+				</div>
 			</header>
 	</body>
 
@@ -98,13 +100,47 @@
 									<p>A number of variables stick out as important, and when put through a correlational analysis in Tableau, 
 										the top SHAP values are confirmed as having higher correlations than other variables.
 									</p>
-									<img src="images/Pig_Shap_.png" style="width: 900px; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
+									<img src="images/Pig_Shap_.png" style="width: 1000px; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
 
 									<h3 class="major">Decision Tree Mapping</h3>
 									<p>While the boosting in XGBoost does happen in an ensemble of decision trees, the feature importance and correlation
 										analysis gives us a solid framework to build our own decision tree from scratch. 
 									</p>
 									<img src="images/Pig_Flow_chart.png" style="width: 800px; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
+
+									<section id="banner" style="display: block; margin: 0 auto;">
+										<div class="inner" >
+											<div class="logo"><img src="images/geo_flake_b&w.png" style="width: 150px; height: auto; display: block; margin: 0 auto; padding-bottom: 50px;"></i></div>
+											<div class="no-background">
+												<h2 style="font-size: 30px; display: block; margin: 0 auto; text-align: center;">Manzano Analytics: Bank Churn Modeling</h2>
+												<p style="font-size: 30px; font-weight: 100; text-align: center;">Lessons Learned:</p>
+											</div>
+											<div class="content1">
+												<section>
+													<div class="row">
+														<div class="alternate">
+															<h4 style="font-size: 18px;">SHAP Values</h4>
+															<ul style="font-size: 20px;">
+																<li>SHapely Additive exPlanations (SHAP values) are an important and versatile tool in an analysts arsenal.
+																	In this project, I needed to create a decision tree from scratch, and needed to decide on the most important
+																	features and values of those features. SHAP values were employed to identify important features. Additionally, 
+																	Tableau was utilized for correlational analysis with scatterplots to confirm or refute the findings of the 
+																	XGBoost model and SHAP values. Consistent SHAP and scatterplot correlations offered a robust framework for 
+																	predicting customer churn.
+																</li>
+															</ul>
+															<h4 style="font-size: 18px;">Decision Tree Modeling</h4>
+															<ul style="font-size: 20px;">
+																<li>Once the important features and their relevant values were identified, the decision tree could be created. Age, Number of Products,
+																	 and Account Balance emerged as the most critical variables once identified. Creating the decision tree and devising strategies to 
+																	 reduce customer churn became straightforward by targeting high-risk customers with promotional and customer service efforts.
+																</li>
+															</ul>
+														</div>
+												</section>			
+											</div>
+										</div>
+									</section>
 
 									<section class="features">
 										<article>

@@ -44,14 +44,33 @@
 
         }
 
-        .content {
-            background-color: rgba(0, 0, 0, 0.6); /* Dark background color  */
+		#four {
+			background-image: url('images/bg.jpg');
+			background-size: cover;
+			background-position: center;
+            background-repeat: repeat;
+			filter: brightness(100%);
+		}
+
+		.content {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background color  */
             padding: 10px; /* Add padding to improve readability */
 			color: #ffffff;
             border-radius: 10px; /* Add rounded corners for aesthetic appeal */
+			text-transform: none;
+			font-size: 20px;
         }
+
+        .content1 {
+            background-color: rgba(36, 61, 83, 0.7); /* Dark background color  */
+            padding: 10px; /* Add padding to improve readability */
+			color: #ffffff;
+            border-radius: 10px; /* Add rounded corners for aesthetic appeal */
+			text-transform: lowercase;
+        }
+
 		.content2 {
-            background-color: rgba(0, 0, 0, 0.33); /* Dark background color  */
+            background-color: rgba(0, 0, 0, 0.514); /* Dark background color  */
 			margin-left: auto;
 			margin-right: auto;
 			padding-left: 10px;
@@ -117,13 +136,64 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner" >
-							<div class="logo"><img src="images/geo_flake_b&w.png" style="width: 150px; height: auto;"></i></div>
-							<div class="no-background">
-								<h2>Aaron Manzano</h2>
-								<p><b>Data Analyst</b></p>
-								<p>Hey! I'm Aaron Manzano, a Data Analyst and seasoned Investment Manager. My proficiency in applied data analytics has propelled my fund to achieve an average CAGR of 40% over each of the last six years.</p>
-									<p>Data is my passion, but more specifically the challenge of separating the noise from the signal to glean actionable insights motivates and enlivens me. My proven ability to derive strategic value from data intricacies aligns seamlessly with my creative edge and strategic vision. I’m looking to bring these skills and more to a dynamic team focused on the cutting edge of data solutions.</p>
+							<div class="inner" style="display: block; justify-content: space-between; align-items: center;">
+								<div class="logo">
+									<img src="images/geo_flake_b&w.png" style="text-align: center; width: 280px; height: auto; display: block; margin: 0 auto;">
+								</div>
 							</div>
+								<div class="no-background">
+								<h2 style="font-size: 45px; text-align: center;">Aaron Manzano</h2>
+								<p style="font-size: 30px; text-align: center;"><strong>Manzano Analytics</strong></p>
+							</div>
+							<div class="content1">
+								<p style="text-transform: none;font-size: 30px; text-align: center;">Data Alchemist | Investment Manager</p>
+								<p style="text-transform: none; font-size: 22px;">Boasting a 40% CAGR over 6 years</p>
+									<h3 class="major" style="font-size: 28px; text-align: center; text-transform: lowercase;">"...the map is not the territory"</h3>
+									<p style="text-transform: none; font-size: 22px;">Data isn't just the new oil, it's also the map of a New World. 
+										In the complex landscape of modern data analysis, we are bearing the fruits of deep understanding sown by the 
+										father of semantics, and Korzybski's words ought to ring truer than ever. Maps are not the underlying territory, words
+										are not the underlying reality, and data is not the underlying decision landscape. A map is only a reflection of the territory,
+										and so we tread carefully, knowing we are driving through the rear-view mirror. It takes 
+										a keen eye for detail and a steadfast approach to avoid being fooled by randomness. Separating the noise from the 
+										signal is what I do best--gleaning actionable insights motivates and enlivens me.</p>
+
+										<p style="text-transform: none; font-size: 22px;">My expertise lies in deriving real strategic value from the 
+											intricacies of data, a skill honed over years of navigating its complexities. This ability seamlessly aligns 
+											with my creative vision and long-term goals, driving me to seek out dynamic teams at the forefront of data-driven innovation.										</p>
+
+										<p style="text-transform: none; font-size: 22px;">I’m eager to bring these skills and more to a collaborative 
+											environment dedicated to pushing the boundaries of data solutions. Let's connect and explore how my unique 
+											perspective can elevate your team's success.</p>
+							</div>
+							<div class="photo">
+								<img src="images/Headshot_Site.png" style="width: 420px; height: auto; display: block; margin: 0 auto; padding-top: 40px;">
+							</div>
+							<ul class="icons" style="text-align: center; padding-top: 20px; padding-bottom: -110px">
+								<li>
+									<div class="icon-container">
+										<a class="icon solid fa-envelope" href="aaronlmanzano@gmail.com"></a>
+										<span>Email</span>
+									</div>
+								</li>
+								<li>
+									<div class="icon-container">
+										<a class="icon solid fa-gem" href="resume.html" target="_blank"></a>
+										<span>Resume</span>
+									</div>
+								</li>
+								<li>
+									<div class="icon-container">
+										<a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/aaronmanzano" target="_blank"></a>
+										<span>LinkedIn</span>
+									</div>
+								</li>
+								<li>
+									<div class="icon-container">
+										<a class="icon brands fa-github" href="https://github.com/tendyzen" target="_blank"></a>
+										<span>GitHub</span>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</section>
 
@@ -181,30 +251,32 @@
 							<section id="four" class="wrapper alt style3">
 								<div class="inner">
 									<h2 class="major">Applied Data Analytics</h2>
-									<p>I've actively contributed to a diverse array of Data Analysis projects, refining my proficiency in Python, adaptable problem-solving, statistical methods, and insightful data visualization. Leveraging tools such as:</p>
-									<section>
+									<p style="font-size: 20px;">I've actively contributed to a diverse array of Data Analysis projects, refining my proficiency in Python, adaptable problem-solving, statistical methods, and insightful data visualization. Leveraging tools such as:</p>
+									<section style="padding-left: 250px;">
 										<div class="row">
 											<div class="alternate">
-												<h4>Python</h4>
-												<ul>
+												<h4 style="font-size: 18px;">Python</h4>
+												<ul style="font-size: 20px;">
 													<li>Plotly and Seaborn visualization analysis.</li>
 													<li>XGBoost modeling and SHAP values for interpretation.</li>
 													<li>Pandas data cleaning and manipulation.</li>
 												</ul>
-												<h4>SQL</h4>
-												<ul>
+												<h4 style="font-size: 18px;">SQL</h4>
+												<ul style="font-size: 20px;">
 													<li>Common Table Expressions.</li>
 													<li>Subqueries and extensive joins.</li>
 													<li>Snowflake schema analysis.</li>
 												</ul>
-												<h4>Tableau</h4>
-												<ul>
+												<h4 style="font-size: 18px;">Tableau</h4>
+												<ul style="font-size: 20px;">
 													<li>Correlational visualization and analysis.</li>
 													<li>Multivariate geospatial analysis.</li>
 													<li>Dashboard engineering and implementation.</li>
 												</ul>
 											</div>
-										<p>I’ve informed decisions to improve profitability by up to <b>80% annually</b>. 
+									</section>
+
+									<p style="font-size: 20px;">I’ve informed decisions to improve profitability by up to <b>80% annually</b>. 
 										In finance, my expertise in instrument research, competitive strategy, 
 										and statistical modeling led to a <b>40% CAGR over six years</b>, showcasing my 
 										ability to navigate dynamic markets with critical thinking and strategic 
@@ -212,9 +284,8 @@
 										on and off the sales floor and enjoyed sales training and team building. Monthly KPIs 
 										were commonly exceeded by <b>over 50%</b> through quantitative research, effective communication 
 										and psychosocial analysis.</p>
-									</section>
 									<h2 class="major">Other Projects</h2>
-									<p>Further analysis using Python, Tableau, SQL, and Excel. Click for information on process and final deliverables. </p>
+									<p style="font-size: 20px;">Further analysis using Python, Tableau, SQL, and Excel. Click for information on process and final deliverables. </p>
 									<section class="features">
 										<article>
 											<a href="Instacart.html" class="image"><img src="images/Instacart_Bubble.png" alt="" /></a>
@@ -242,7 +313,7 @@
 										</article>
 									</section>
 									<ul class="actions">
-										<li><a href="#" class="button">Top</a></li>
+										<li><a href="#" class="button" style="background-color:  rgba(36, 61, 83, 0.7);">Top</a></li>
 									</ul>
 								</div>
 							</section>
@@ -254,8 +325,8 @@
 						<div class="content2">
 							<div class="column">
 								<h2 class="major">Get in touch</h2>
-								<p>As a versatile data analyst and seasoned investment manager, my successful background in finance, energy, and telecommunications uniquely equips me with a valuable skill set for applied data analytics.</p>
-								<p>My ultimate goal is to secure a full-time data analyst position, leveraging my diverse skill set to contribute meaningfully to your team's success. Let's connect and explore how my exceptional background can drive insights and innovation in your organization.</p>
+								<p style="font-size: 19px;">As a versatile data analyst and seasoned investment manager, my successful background in finance, energy, and telecommunications uniquely equips me with a valuable skill set for applied data analytics.</p>
+								<p style="font-size: 19px;">My ultimate goal is to secure a full-time data analyst position, leveraging my diverse skill set to contribute meaningfully to your team's success. Let's connect and explore how my exceptional background can drive insights and innovation in your organization.</p>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field">
