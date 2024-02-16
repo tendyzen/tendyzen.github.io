@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manzano Analytics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		.content2 {
+            background-color: rgba(0, 0, 0, 0.33); /* Dark background color  */
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 10px;
+			width: 50%;
+			color: #ffffff;
+            border-radius: 10px; /* Add rounded corners for aesthetic appeal */
+        }
+
+		</style>
+	</head>
+	<body>
+		<header class="banner">
+			<div style="padding-top: 100px; padding-left: 200px; margin-bottom: -150px; width: 350px; height: auto;">
+				<a href="index.html">
+					<img src="images/geo_flake_b&w.png" alt="Manzano Analytics Icon" style="width: 100%; height: 100%;">
+				</a>
+				</div>
+			</header>
+	</body>
+	
+	<body class="is-preload" style="background-image: url(images/mountains_stars_2.jpeg); background-size: cover;">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Manzano Analytics</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html"><img src="images/geo_flake_b&w.png" style="width: 20px; height: auto; vertical-align: middle;"> Home</a></li>
+								<li><a href="resume.html" target="_blank" class="icon solid fa-gem"> Resume</a></li>
+								<li><a href="Women_Empowerment.html">Economy of Women's Rights</a></li>
+								<li><a href="Rockbuster.html">RockBuster and XGBoost</a></li>
+								<li><a href="Influenza.html">Influenza Staffing Strategy</a></li>
+								<li><a href="Beecher.html">Archaelogical Analysis</a></li>
+								<li><a href="Instacart.html">Instacart Customer Analysis</a></li>
+								<li><a href="Gameco.html">Video Game Sales Analysis</a></li>
+								<li><a href="Euro_Tuition.html">European Education Costs</a></li>
+								<li><a href="Pig_E_Bank.html">Bank Churn Modeling</a></li>
+								<li><a href="index.html#footer"><img src="images/geo_flake_double.png" style="width: 20px; height: auto; vertical-align: middle;"> Contact</a></li>
+
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="content2">
+								<h2>Instacart Customer Analysis</h2>
+								<p>Python and Tableau to understand customer spending.</p>
+							</div>
+							<div class="image-container" style="position: absolute; right: 40px; top: 260px;">
+								<img src="images/Instacart_intro.png" style="width: 360px; height: auto; border-width: 5px;">
+							</div>
+
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Python and Data Cleaning</h3>
+									<p>The Instacart dataset encompasses a sample size of over 3 million grocery orders originating 
+										from more than 200,000 anonymized users. This size of data requires certain techniques in order
+										to efficiently manipulate the data, such as saving to pandas pickle format to save computational 
+										resources.</p>
+									<p> This flow chart and sample of python code breaks down some of the initial steps in the analysis.</p>
+									<img src="images/Instacart_Python_Merge.png" style="width: 850px; display: block; margin: auto;">
+									<p></p>
+									<p>Analyzing the total revenue breakdown reveals that just 1% of products contribute to 47% of the revenue, while 
+										the top 10% of products accounts for 84% of total revenue. This provides valuable insights into guiding effective
+										recommendations. Care should be taken to focus on the top products, as contribution to revenue is asymmetric.
+									</p>
+									<img src="images/Instacart_Python_Pie.png" style="width: 650px; display: block; margin: auto;">
+									<p></p>
+
+									<h3 class="major">Python and Customer Segmentation</h3>
+									<p></p>
+									<img src="images/Instacart_Cust_Profiling.png" style="width: 950px; display: block; margin: auto;">
+									<p></p>
+
+									<h3 class="major">Conclusions</h3>
+									<img src="images/Instacart_Recommendations.png" style="width: 950px; display: block; margin: auto;">
+									<section>
+										<h3 class="major">Instacart Marketing Recommendations</h3>
+										<h4></h4>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Observation</th>
+														<th>Recommendations</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Wednesday and Thursday are the least busy days.</td>
+														<td>Implement Special Weekday Savings, on Wednesdays and Thursdays. Offer exclusive discounts, promotions, or incentives during these less busy days to attract more customers and boost sales.														</td>
+													</tr>
+													<tr>
+														<td>92.7% of revenue is made between the hours of 9am - 5pm. </td>
+														<td>Time-Sensitive Deals: Offer time-limited discounts or promotions during the peak hours to create a sense of urgency. Focus on high margin products.</td>
+													</tr>
+													<tr>
+														<td>The top 1% of products drive over 47% of revenue. Produce and Dairy/Eggs are by far the largest revenue drivers. </td>
+														<td>Prioritize marketing the top 1% of products with targeted and time-sensitive ad and promotion campaigns. Implement strategy to stop stocking bottom n% of  products on a rolling basis.</td>
+													</tr>
+													<tr>
+														<td>Loyal customers are a small relative number of individuals, have a high total order count and drive outsized revenue per customer.
+														</td>
+														<td>Implement Loyalty Rewards Program. Incentivize and retain loyal customers. Offer exclusive discounts, early access to deals, or points for every purchase.</td>
+													</tr>
+													<tr>
+														<td>The South leads in Revenue, the Northeast is trailing. Pennsylvania is a strong market, but New York and New Jersey are lagging.</td>
+														<td>Local Partnerships: Collaborate with local businesses and suppliers in underperforming regions to expand your product selection. Offer unique, locally-sourced items.</td>
+													</tr>
+													<tr>
+														<td>Midlife Married with Kids and the Elder Married with Kids are the top spenders.</td>
+														<td>Targeted Product Bundles: Create product bundles and promotions specifically designed for Midlife and Elder Families with kids. These bundles can include family-sized products, meal kits, and household essentials.</td>
+													</tr>
+													<tr>
+														<td>The scale of the produce department's success is evident.</td>
+														<td>Cross-Department Packaging: Foster collaboration between departments to enhance product pairings. Work to identify high-margin products that complement specific customer profiles and produce items. Implement joint marketing campaigns. </td>
+													</tr>
+												</tbody>
+												<tfoot>
+												</tfoot>
+											</table>
+											<section id="banner" style="display: block; margin: 0 auto;">
+												<div class="inner" >
+													<div class="logo"><img src="images/geo_flake_b&w.png" style="width: 150px; height: auto; display: block; margin: 0 auto; padding-bottom: 50px;"></i></div>
+													<div class="no-background" style="width: max-content; margin: 0 auto;">
+														<h2 style="font-size: 29px; display: block; margin: 0 auto; padding: 0 auto; white-space: nowrap;">Manzano Analytics: Instacart Customer Analysis</h2>
+														<p style="font-size: 30px; font-weight: 100; text-align: center;">Lessons Learned:</p>
+													</div>
+													<div class="content1">
+														<section>
+															<div class="row">
+																<div class="alternate">
+																	<h4 style="font-size: 18px;">Working with Large Datasets</h4>
+																	<ul style="font-size: 20px;">
+																		<li>The Instacart dataset, with over 3 million entries, expanded to over 32 million rows when merged 
+																			with the mock customer dataset. Handling these large datasets involved various techniques such as saving 
+																			to Python's pickle files, subsampling the data, and optimizing memory usage to prevent system overload during processing.
+																		</li>
+		
+																	</ul>
+																	<h4 style="font-size: 18px;">The Power of Seaborn</h4>
+																	<ul style="font-size: 20px;">
+																		<li>Seaborn's pairplot function is an invaluable tool for exploratory data analysis, enabling data scientists 
+																			to gain deep insights into the relationships between variables in their datasets quickly and efficiently. 
+																			Seaborn's pairplot function efficiently compares each variable with every other variable, providing valuable 
+																			insights with minimal code. This can quickly lead to identification of patterns, correlations, and potential outliers
+																			in a comprehensive and streamlined manner.</li>
+																	</ul>
+																</div>
+														</section>			
+													</div>
+												</div>
+											</section>
+		
+										</div>
+											<p></p>
+											<section class="features">
+										<article>
+											<a href="Euro_Tuition.html" class="image"><img src="images/Tuition_Dash.png" alt="" /></a>
+											<h3 class="major">European Education Costs</h3>
+											<p>Using Python to prepare data for a Tableau dashboard illustrating the relationship between GDP per capita and higher education cost.</p>
+											<a href="Euro_Tuition.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="Influenza.html" class="image"><img src="images/Flu_Intro.png" alt="" /></a>
+											<h3 class="major">Influenza Staffing Strategy</h3>
+											<p>Every year, hospitals are faced with staffing challenges due to the influx of influenza patients. This prescriptive analysis uses USA CDC data and seeks to define and direct staff from low-need states to high-need states.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="content2">
+							<h2 class="major">Get in touch</h2>
+							<p> A seasoned and self-made fund manager, averaging a 40% CAGR for six years, and demonstrating an expertise in applied data analytics..</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon brands fa-codepen">
+									<b>Manzano Analytics</b><br />
+									Aaron Manzano<br />
+									Washington, PA 15301
+								</li>
+								<li class="icon solid fa-phone">(724) 787-9773</li>
+								<li class="icon solid fa-envelope"><a href="aaronlmanzano@gmail.com">AaronLManzano@gmail.com</a></li>
+								<li class="icon solid fa-gem"><a href="resume.html" target="_blank">Resume</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/aaronmanzano" target="_blank">Linkedin</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/tendyzen" target="_blank">GitHub</a></li>
+						</ul>
+							<ul class="copyright">
+								<li>&copy; Manzano Analytics Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

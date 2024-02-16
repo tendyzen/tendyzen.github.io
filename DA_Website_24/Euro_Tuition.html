@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manzano Analytics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.content2 {
+            background-color: rgba(0, 0, 0, 0.55); /* Dark background color  */
+            margin-left: auto; /* Add padding to improve readability */
+			margin-right: auto;
+			width: 50%;
+			color: #ffffff;
+            border-radius: 10px; /* Add rounded corners for aesthetic appeal */
+        }
+
+		</style>
+
+	</head>
+	<body>
+		<header class="banner">
+			<div style="padding-top: 100px; padding-left: 200px; margin-bottom: -150px; width: 350px; height: auto;">
+				<a href="index.html">
+					<img src="images/geo_flake_b&w.png" alt="Manzano Analytics Icon" style="width: 100%; height: 100%;">
+				</a>
+				</div>
+			</header>
+	</body>
+
+	<body class="is-preload" style="background-image: url(images/mountains_stars_2.jpeg); background-size: cover;">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Manzano Analytics</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html"><img url="images/geo_flake_b&w.png" style="width: 20px; height: auto; vertical-align: middle;"> Home</a></li>
+								<li><a href="resume.html" target="_blank" class="icon solid fa-gem"> Resume</a></li>
+								<li><a href="Women_Empowerment.html">Economy of Women's Rights</a></li>
+								<li><a href="Rockbuster.html">RockBuster and XGBoost</a></li>
+								<li><a href="Influenza.html">Influenza Staffing Strategy</a></li>
+								<li><a href="Beecher.html">Archaelogical Analysis</a></li>
+								<li><a href="Instacart.html">Instacart Customer Analysis</a></li>
+								<li><a href="Gameco.html">Video Game Sales Analysis</a></li>
+								<li><a href="Euro_Tuition.html">European Education Costs</a></li>
+								<li><a href="Pig_E_Bank.html">Bank Churn Modeling</a></li>
+								<li><a href="index.html#footer"><img src="images/geo_flake_double.png" style="width: 20px; height: auto; vertical-align: middle;"> Contact</a></li>
+
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="content2">
+								<h2>European Education Costs</h2>
+								<p>Higher Education costs and GDP in Europe.</p>
+							</div>
+							<div class="image-container" style="position: absolute; right: 120px; top: 200px;">
+								<img src="images/Tuition_intro.png" style="width: 280px; height: auto; border-width: 5px;">
+							</div>
+
+					
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Exploratory Data Analysis</h3>
+									<p>This data is from data.world, and can be found <a href="https://data.world/makeovermonday/2024w5-the-cheapest-countries-to-study-in-europe-in-2023">here</a>. This includes educational and living costs for Europe in 2023. We then begin this analysis by needing to create a single merged dataset. GDP per capita come from the World Bank.</p>
+
+									<img src="images/Tuition_EDA.png" alt="" width="700" height="500" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
+									
+									<p>Here Python is used for cleaning and merging the datasets into only relevant data. Countries names are checked using a list comprehension, and values are adjusted by the average exchange rate of US dollars to UK pounds.</p>
+
+									<h3 class="major">Tableau Dashboard Engineering</h3>
+									<p>The merged dataset is then imported into tableau for data visualization. The main aim is to visualize and statistically analyze the countries total education costs and gdp per capita.</p>
+									
+									<img src="images/Tuition_Rankings.png" width="850" height="auto" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
+									<p>This shows the rankings of Europe by Tuition Fees. To gain a deeper understanding, GDP Per Capita and Living Costs are explored in a Geographic Analysis.</p>
+
+									<img src="images/Tuition_Dash.png" width="800" height="auto" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
+									<p>The coefficient is very high, indicating that a high percentage of the variance in total educational costs and living costs are determined by gdp per capita.</p>
+
+									<p>When living costs are controlled for, the coefficient decreases substantially, but remains positive and significant.</p>
+									<img src="images/Tuition_Education_Cost.png" width="700" height="auto" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 200px;">
+									<p></p>
+									<h3 class="major">Tableau Dashboard</h3>
+									<p>Below is the entire tableau dashboard for exploration.</p>
+									<div class='tableauPlaceholder' id='viz1707429383260' style='position: relative'><noscript><a href='#'><img alt='European Education ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Eu&#47;Euro_Education_23&#47;EuropeanEducation&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Euro_Education_23&#47;EuropeanEducation' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Eu&#47;Euro_Education_23&#47;EuropeanEducation&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1707429383260');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+									<h3 class="major" style="padding-top: 90px; padding-bottom: -100px;"></h3>
+
+									<section id="banner" style="display: block; margin: 0 auto; padding-top: -190px;">
+										<div class="inner" >
+											<div class="logo"><img src="images/geo_flake_b&w.png" style="width: 150px; height: auto; display: block; margin: 0 auto; padding-bottom: 50px;"></i></div>
+											<div class="no-background">
+												<h2 style="font-size: 30px; display: block; margin: 0 auto; padding-left: 40px; white-space: nowrap;">Manzano Analytics: European Education Costs</h2>
+												<p style="font-size: 30px; font-weight: 100; text-align: center;">Lessons Learned:</p>
+											</div>
+											<div class="content1">
+												<section>
+													<div class="row">
+														<div class="alternate">
+															<h4 style="font-size: 18px;">Tableau Dashboard Engineering</h4>
+															<ul style="font-size: 20px;">
+																<li>Tableau is a powerful tool for combining correlational analysis and geospatial visualizations,
+																	and this project helped me refine my process for each. Illustrating the correlation between total 
+																	education costs and GDP per capita was straightforward, but condensing this information into a single 
+																	frame was essential. Leveraging Tableau's features, creating a cohesive dashboard through effective data 
+																	visualization techniques becomes more accessible.  
+																</li>
+															</ul>
+															<h4 style="font-size: 18px;">Designing with Icons</h4>
+															<ul style="font-size: 20px;">
+																<li>To make the most appealing visuals possible, I imported custom icons of flags and matched each with
+																	the correct country. Tableau allows for easy importing of custom icons, and this supports its popularity
+																	with the data visualization community. The project highlights how attention to aesthetically pleasing design 
+																	elements enhances the impact and clarity of data visualization.
+																</li>
+															</ul>
+															<h4 style="font-size: 18px;">Python Data Wrangling</h4>
+															<ul style="font-size: 20px;">
+																<li>This project involved merging datasets from data.world and the World Bank, necessitating proficiency in Python data 
+																	manipulation. I defined a function for list comprehensions in order to easily check which countries 
+																	were different, and then changed the names where applicable. Utilizing list comprehensions and 
+																	function building streamlines and accelerates this process compared to other methods.
+																</li>
+															</ul>
+
+														</div>
+												</section>			
+											</div>
+										</div>
+									</section>
+
+									<h3 class="major"></h3>
+									<section class="features">
+										<article>
+											<a href="Beecher.html" class="image"><img src="images/Beecher_Tree_Map.png" alt="" /></a>
+											<h3 class="major">Archaelogical Site Analysis</h3>
+											<p>A descriptive analysis of a Southeastern Kentucky Archaelogical site.</p>
+											<a href="Beecher.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Flu_Intro.png" alt="" /></a>
+											<h3 class="major">Influenza Staffing Strategy</h3>
+											<p>Every year, hospitals are faced with staffing challenges due to the influx of influenza patients. This prescriptive analysis uses USA CDC data and seeks to define and direct staff from low-need states to high-need states.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p> A seasoned and self-made fund manager, averaging a 40% CAGR for six years, and demonstrating an expertise in applied data analytics.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon brands fa-codepen">
+									<b>Manzano Analytics</b><br />
+									Aaron Manzano<br />
+									Washington, PA 15301
+								</li>
+								<li class="icon solid fa-phone">(724) 787-9773</li>
+								<li class="icon solid fa-envelope"><a href="aaronlmanzano@gmail.com">AaronLManzano@gmail.com</a></li>
+								<li class="icon solid fa-gem"><a href="resume.html" target="_blank">Resume</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/aaronmanzano" target="_blank">Linkedin</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/tendyzen" target="_blank">GitHub</a></li>
+						</ul>
+							<ul class="copyright">
+								<li>&copy; Manzano Analytics Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
