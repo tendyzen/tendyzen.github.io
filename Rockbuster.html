@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manzano Analytics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/geo_flake_b&w.png">
+
+		<style>
+			.content2 {
+            background-color: rgba(0, 0, 0, 0.55); /* Dark background color  */
+            margin-left: auto; /* Add padding to improve readability */
+			margin-right: auto;
+			width: 50%;
+			color: #ffffff;
+            border-radius: 10px; /* Add rounded corners for aesthetic appeal */
+        }
+
+		</style>
+		
+	</head>
+	<body>
+		<header class="banner">
+			<div style="padding-top: 100px; padding-left: 200px; margin-bottom: -150px; width: 350px; height: auto;">
+				<a href="index.html">
+					<img src="images/geo_flake_b&w.png" alt="Manzano Analytics Icon" style="width: 100%; height: 100%;">
+				</a>
+				</div>
+			</header>
+	</body>
+
+	<body class="is-preload" style="background-image: url(images/mountains_stars_2.jpeg); background-size: cover;">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Manzano Analytics</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html"><img src="images/geo_flake_b&w.png" style="width: 20px; height: auto; vertical-align: middle;"> Home</a></li>
+								<li><a href="resume.html" target="_blank" class="icon solid fa-gem"> Resume</a></li>
+								<li><a href="Women_Empowerment.html">The Economy of Women's Rights</a></li>
+								<li><a href="Rockbuster.html">RockBuster and XGBoost</a></li>
+								<li><a href="Influenza.html">Influenza Staffing Strategy</a></li>
+								<li><a href="Beecher.html">Archaelogical Analysis</a></li>
+								<li><a href="Instacart.html">Instacart Customer Analysis</a></li>
+								<li><a href="Gameco.html">GameCo Marketing Strategy</a></li>
+								<li><a href="Euro_Tuition.html">European Education Costs</a></li>
+								<li><a href="Pig_E_Bank.html">Bank Churn Modeling</a></li>
+								<li><a href="index.html#footer"><img src="images/geo_flake_double.png" style="width: 20px; height: auto; vertical-align: middle;"> Contact</a></li>
+
+
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header style="text-align:center; position: relative;">
+							<div class="content2">
+								<h2>RockBuster and XGBoost</h2>
+								<p>Modeling the most important features for rental profitability.</p>
+							</div>
+							<div class="image-container" style="position: absolute; right: 50px; top: 190px;">
+								<img src="images/Rockbuster_intro 2.png" style="width: 350px; height: auto; border-width: 5px;">
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">RockBuster SQL</h3>
+									<p>The RockBuster data is a mock movie rental company database in snowflake schema. In order to
+										gain insight into profitability improvements, SQL, Python, and Tableau will be utilized. A sample of
+										initial SQL queries are collected below as well as the data dictionary.</p>
+									<p></p>
+
+									<img src="images/Rockbuster_SQL_white.png" style="width: 650px; display: block; margin: auto;">
+									<p></p>
+									<p>The subquery could be avoided altogether to get this average data, but it would leave us with a
+										less dynamic query that would need to be updated with an evolving database.</p>
+									
+									<img src="images/Rockbuster_Data_Dict.png" style="width: 650px; display: block; margin: auto;">
+									<p></p>
+									<h3 class="major">RockBuster XGBoost and SHAP</h3>
+
+									<p>XGBoost, short for eXtreme Gradient Boosting, is a popular machine learning algorithm known for its scalability 
+										and efficiency in handling large datasets. It uses an decision tree ensemble technique called gradient boosting 
+										to recursively improve weak nodes, resulting in highly accurate models for classification and 
+										regression tasks.</p>
+
+									<p>SHAP (SHapley Additive exPlanations) values quantify the impact of individual features on model predictions to 
+										offer insights into the importance of each input variable.</p>
+
+									<img src="images/Rockbuster_XGB.png" style="width: 950px; display: block; margin: auto;">
+									<p></p>
+
+									<p>Targeting gross profit, the XGBoost decision tree model has a Mean Squared Error 0.0087, indicating the robustness of 
+										the predictive capability. Variable leakage is likely a key issue, but highlighting the underlying components provides 
+										direction towards some useful insights. Let's look at the model interpretation of a simple business heuristic, "Buy low,
+										sell high."
+									</p>
+
+									<p></p>
+									<img src="images/Rockbuster_Shap_Explain.png" style="width: 750px; display: block; margin: auto;">
+									
+									<p></p>
+
+									<h3 class="major">Conclusions</h3>
+									<p>The main takeaway from this analysis is the importance of base costs and pricing. Interpretation of the model puts 
+										quantifiable strategy in focus. Here we can see the three levels of rates that RockBuster pays for each movie copy, 
+										and the 
+									</p>
+									<img src="images/RockBuster_Replacement_Costs.png" style="width: 950px; display: block; margin: auto;">
+									<p></p>
+
+									<h3 class="major">Full RockBuster PDF</h3>
+									<iframe src="images/Rockbuster_Consulting_proposal.pdf" alt="" width="950" height="600"></iframe>
+									
+									<section id="banner" style="display: block; margin: 0 auto;">
+										<div class="inner" >
+											<div class="logo"><img src="images/geo_flake_b&w.png" style="width: 150px; height: auto; display: block; margin: 0 auto; padding-bottom: 50px;"></i></div>
+											<div class="no-background">
+												<h2 style="font-size: 30px; display: block; margin: 0 auto; padding-left: 40px;">Manzano Analytics: RockBuster and XGBoost</h2>
+												<p style="font-size: 30px; font-weight: 100; text-align: center;">Lessons Learned:</p>
+											</div>
+											<div class="content1">
+												<section>
+													<div class="row">
+														<div class="alternate">
+															<h4 style="font-size: 18px;">Model Interpretability</h4>
+															<ul style="font-size: 20px;">
+																<li>Many aspects of machine learning, such as model behavior and decision-making processes, 
+																	are often difficult for humans to interpret. We rely on 
+																	accuracy metrics like mean squared error to give a scalar value on the accuracy of
+																	the model, but techniques like using SHapley Additive exPlanations are invaluable for 
+																	feature analysis. The Python code provides comprehensive information about the model's 
+																	variable weights in a straightforward manner.
+																</li>
+															</ul>
+															<h4 style="font-size: 18px;">Feature Leakage</h4>
+															<ul style="font-size: 20px">
+																<li>The model's performance is affected by feature leakage, where the target variable (return on investment) is 
+																	influenced by both cost and revenue, leading to challenges. This will 
+																	naturally hinder the models ability to generalize to
+																	new data or to make accurate real-world predictions. Despite these flaws, analyzing the values for cost and 
+																	revenue highlights the importance of prioritizing financial considerations above other factors.
+																</li>
+																<li>More information on feature leakage and steps taken to clean SHAP results and optimize XGBoost modeling with GridSearch 
+																	can be found in the consulting proposal above on pages 18-20. </li>
+															</ul>
+															<h4 style="font-size: 20px;">Profit Optimization</h4>
+															<ul style="font-size: 20px;">
+																<li>After conducting the feature importance analysis, several key insights emerged. Firstly, direct inputs to cost and revenue
+																	were highlighted as integral to profitability. For instance, the highest cost rentals were being rented at the lowest
+																	tier pricing, and this was hindering profitability. Secondly, as the SHAP interpretability showed, stocking too many 
+																	copies of a single title negatively impacts ROI. 
+																</li>
+															</ul>
+														</div>
+												</section>			
+											</div>
+										</div>
+									</section>
+
+									
+									<h3 class="major">More Projects</h3>
+									<p></p>
+									<section class="features">
+										<article>
+											<a href="Women_Empowerment.html" class="image"><img src="images/WEI_K_Clusters_countries.png" alt="" /></a>
+											<h3 class="major">Economy of Women's Rights</h3>
+											<p>A 5 decade journey into Women's Rights and economic growth.</p>
+											<a href="Women_Empowerment.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="Influenza.html" class="image"><img src="images/Flu_Intro.png" alt="" /></a>
+											<h3 class="major">Influenza Staffing Strategy</h3>
+											<p>CDC dataset analysis of flu season in the US.</p>
+											<a href="Influenza.html" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p> A seasoned and self-made fund manager, averaging a 40% CAGR for six years, and demonstrating an expertise in applied data analytics..</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon brands fa-codepen">
+									<b>Manzano Analytics</b><br />
+									Aaron Manzano<br />
+									Washington, PA 15301
+								</li>
+								<li class="icon solid fa-phone">(724) 787-9773</li>
+								<li class="icon solid fa-envelope"><a href="aaronlmanzano@gmail.com">AaronLManzano@gmail.com</a></li>
+								<li class="icon solid fa-gem"><a href="resume.html" target="_blank">Resume</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/aaronmanzano" target="_blank">Linkedin</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/tendyzen" target="_blank">GitHub</a></li>
+						</ul>
+							<ul class="copyright">
+								<li>&copy; Manzano Analytics Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
